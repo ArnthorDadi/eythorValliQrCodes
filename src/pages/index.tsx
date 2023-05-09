@@ -8,8 +8,8 @@ function t(time: string, text: string) {
   let minutes = 0;
   if (time.includes(":")) {
     const split = time.split(":");
-    minutes = parseInt(split[0]);
-    seconds = parseInt(split[1]);
+    minutes = parseInt(split[0] as string);
+    seconds = parseInt(split[1] as string);
   } else {
     seconds = parseInt(time);
   }
